@@ -8,7 +8,7 @@ canvas.addEventListener("mouseup", restart);
 var animationRequest;
 
 //Squares
-var squaresPerRow = 80;
+var squaresPerRow = 60;
 var squareSide = canvas.width/squaresPerRow;
 var rows = Math.floor(canvas.height/squareSide);
 var xCoords = [];

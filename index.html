@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta property="og:title" content="1D Cellular Automata">
+    <meta property="og:description" content="interactive animation">
+    <meta property="og:image" content="https://github.com/hanhanhan/cellular_automata_1d/blob/511418957e349de95024a91ca7ed91a01ebc7b5c/preview.png">  
     <title>1d cellular automata</title>
     <style>
         html { font-size: 2em; }
@@ -13,9 +16,11 @@
 Inspired by <a href="http://natureofcode.com/book/chapter-7-cellular-automata/">
 The Nature of Code</a> 
 <br>
-Currently using ruleset <b id='ruleNumber'></b>
+Currently using ruleset <output id='ruleNumber'></output>.
+You can pick a different rule:  
+<input type="range" min="0" max="255" value="120" step="1" id="rulePicker">
 <br>
-Click a square and the following rows will update.
+You can also click a square to flip its value, and the rows following will update.
 </div>
 <div>
 <canvas id="canvas" style="background:black"></canvas>
